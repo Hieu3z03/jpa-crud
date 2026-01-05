@@ -1,7 +1,6 @@
 package com.example.jpa_crud.mapper;
 
 import org.mapstruct.Mapper;
-import org.mapstruct.Mapping;
 import org.mapstruct.MappingTarget;
 
 import com.example.jpa_crud.dto.request.UserCreationRequest;
