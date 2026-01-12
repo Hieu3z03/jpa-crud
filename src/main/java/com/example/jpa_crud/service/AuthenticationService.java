@@ -64,7 +64,7 @@ public class AuthenticationService {
         boolean authenticate = passwordEncoder.matches(request.getPassword(), user.getPassword());
 
         if (!authenticate) {
-            throw new AppException(ErrorCode.UNAUTHICATED);
+            throw new AppException(ErrorCode.UNAUTHENTICATED);
         }
 
         var token = generateToken(user);
